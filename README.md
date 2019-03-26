@@ -72,3 +72,8 @@ Resuelve primero el ejercicio Listing 14-2. Using Pattern and Matcher Classes pa
   pen pineapple apple pen
   ```
   https://www.youtube.com/watch?v=Ct6BUPvE2sM
+  
+Es recomendable profundizar un poco en el conocimiento de las expresiones regulares. Por ejemplo, Lookahead y Lookbehind resultan muy útiles:
+
+http://www.regular-expressions.info/lookaround.html
+
