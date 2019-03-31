@@ -32,18 +32,4 @@ public enum NumerosRomanos {
         return valor;
     }
 
-    // Metodos
-
-    public static int transformar(String numRomano) {
-
-        int resultado = 0;
-
-        for (NumerosRomanos numerosRomanos : NumerosRomanos.values()) {
-            if (numRomano.equals(numerosRomanos.name())) {
-                resultado = numerosRomanos.getValor();
-            }
-        }
-        return resultado;
-    }
-
 }
