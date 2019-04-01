@@ -24,6 +24,7 @@ XLV   cuarenta y cinco
 **Has de utilizar expresiones regulares y tipos enumerados.**
 
 **Las reglas están descritas en el artículo de la Wikipedia**
+
 [Numeración Romana](https://es.wikipedia.org/wiki/Numeraci%C3%B3n_romana)
 
 Hay que tener en cuenta que la numeración romana, al no ser un [sistema posicional](https://es.wikipedia.org/wiki/Notaci%C3%B3n_posicional), no requiere del [cero](https://es.wikipedia.org/wiki/Cero).
@@ -40,11 +41,13 @@ en el caso de estar restando, no pueden repetirse.
   2. Los símbolos con base 5 no pueden utilizarse para restar (p.e. 45 se escribe ‘XLV’ y no ‘VL’).
 
 **Casos Test**
+
 Utilizad los que aparecen en el artículo de la Wikipedia, que explican cómo funcionan las normas.
 
 **El código propuesto no existe si no incluye casos test para testear las expresiones regulares y la conversión de los números.**
 
 **Directrices**
+
 Dado un número romano, p.e.
 ```
 String numeroRomano = "MDCCCLXXXVIII";
@@ -63,6 +66,7 @@ Esto puede traducirse a expresiones regulares y a tipos enumerados:
 - y luego utilizar los tipos enumerados para obtener el valor de los símbolos romanos (y las combinaciones permitidas, por ejemplo, aunque esto no es necesario).
 
 **Expresiones regulares**
+
 Resuelve primero el ejercicio Listing 14-2. Using Pattern and Matcher Classes pag. 527 del libro Beginning Java 8 Fundamentals. Es necesario leerse el capítulo del libro para entender cómo se usan las expresiones regulares en Java.
 
 - Será necesario utilizar herramientas online para testear expresiones regulares:
