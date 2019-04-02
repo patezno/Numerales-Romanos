@@ -17,8 +17,6 @@ public class NumerosRomanosTest {
 
     @Test
     public void encontrarLetraTest() {
-        assertEquals(10, RomanPattern.encontrarLetra("X"));
-        String facil ="XIV";
         String sencillo = "XXVI";
         String normal = "CXLV";
         String semiNormal = "CD";

@@ -5,7 +5,7 @@ public class RomanPattern {
 
     // Atributos
 
-    private static String grupoSumatorio = "[MCXI]{3}|(?<!C)[DM]|(?<!X)[LC](?!D)|(?<!I)[VX](?![LC])|I(?![VX])";
+    private static String grupoSumatorio = "(?<!C)[DM]|(?<!X)[LC](?![DM])|(?<!I)[VX](?![LC])|I(?![VX])";
     private static String grupoSustractivo = "(C[DM])|(X[LC])|(I[VX])";
     private static String[] listaGrupos = {grupoSustractivo, grupoSumatorio};
 
