@@ -7,13 +7,13 @@ public class NumerosRomanosTest {
 
     @Test
     public void verificarNumerosTest() {
-        assertFalse(RomanPattern.verificarString("IVX"));
-        assertFalse(RomanPattern.verificarString("MIL"));
-        assertFalse(RomanPattern.verificarString("CDD"));
-        assertFalse(RomanPattern.verificarString("MXCD"));
-        assertTrue(RomanPattern.verificarString("MMM"));
-        assertTrue(RomanPattern.verificarString("MMMDCCCLXXXVIII"));
-        assertFalse(RomanPattern.verificarString("MDCLXVIV"));
+        assertFalse(RomanPattern.verificarNumero("IVX"));
+        assertFalse(RomanPattern.verificarNumero("MIL"));
+        assertFalse(RomanPattern.verificarNumero("CDD"));
+        assertFalse(RomanPattern.verificarNumero("MXCD"));
+        assertTrue(RomanPattern.verificarNumero("MMM"));
+        assertTrue(RomanPattern.verificarNumero("MMMDCCCLXXXVIII"));
+        assertFalse(RomanPattern.verificarNumero("MDCLXVIV"));
     }
 
 }
