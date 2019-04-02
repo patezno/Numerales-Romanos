@@ -22,26 +22,24 @@ public class RomanPattern {
         return numero.matches(verify);
     }
 
-    public int encontrarLetra(String fuente) {
+    public static int encontrarLetra(String fuente) {
 
         int resultado = 0;
 
-        for (String regex : getListaGrupos()) {
-            Pattern p = Pattern.compile(regex);
-            Matcher m = p.matcher(fuente);
-            while (m.find()) {
-                for (NumerosRomanos letra : NumerosRomanos.values()) {
-                    if (m.group().equals(letra.name())) {
-                        resultado += letra.getValor();
+        if (verificarNumero(fuente)){
+
+            for (String regex : getListaGrupos()) {
+                Pattern p = Pattern.compile(regex);
+                Matcher m = p.matcher(fuente);
+                while (m.find()) {
+                    for (NumerosRomanos letra : NumerosRomanos.values()) {
+                        if (m.group().equals(letra.name())) {
+                            resultado += letra.getValor();
+                        }
                     }
                 }
             }
         }
         return resultado;
     }
-
-    /**
-     *
-     */
-
 }
